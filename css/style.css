@@ -23,9 +23,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
-body {
-	line-height: 1;
-}
+
 
 ol, ul {
 	list-style: none;
@@ -50,3 +48,168 @@ table {
 
 
 /* Write your css below here */
+
+body{
+	background-color: antiquewhite;
+	width: 100vw;
+	color: dark;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+header{
+	background-color: antiquewhite;
+	min-height: 80px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
+h1{
+	font-size: 60px;
+	padding-left: 30px;
+	color: #000c64;
+}
+
+.topheader{
+	display: flex;
+	justify-content: flex-end;
+	gap: 15px;
+	height: 25px;
+	padding-right: 50px;
+
+}
+
+.bottomheader{
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+	height: 50px;
+	background-color:#a64a4a;
+}
+
+
+
+main{padding-top: 185px;
+	display: flex;
+	min-height: 70vh ;
+}
+
+.mainleft{
+	background-color: whitesmoke;
+	flex: 8;
+	padding: 25px;
+}
+
+.mainright{
+	background-color: #eaefee;
+	flex: 3;
+	padding: 20px;
+	justify-content: center;
+	font-family: cursive ;
+}
+
+.mainright h1{
+	font-size: 20px;
+	padding-left: 40px;
+}
+
+main a{
+	color: #e8fbf5;
+}
+
+a:hover{
+	background-color: #000c64;
+	font-size: 20px;
+}
+
+.bottomheader nav a{
+	color: #e0e6e8;
+	margin-left: 20px;
+}
+
+nav{
+	width: 70%;
+	display: flex;
+	justify-content: space-around;
+}
+
+footer{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	height: 60px;
+	background-color: #f2f2be;
+	justify-content: center;
+	gap: 800px;
+	align-items: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2{
+	color: #f0cd77;
+	background-color: black ;
+	width: fit-content;
+}
+
+h3{
+	color: #6eb32e;
+	background-color: black ;
+	width: fit-content;
+}
+
+h4{
+	color: #3f51db;
+	background-color: black ;
+	width: fit-content;
+}
+
+h5{
+	color: #cb7e62;
+	background-color: black ;
+	width: fit-content;
+}
+
+h6{
+	color: #3dcdcd;
+	background-color: black ;
+	width: fit-content;
+}
+
+@media screen  and (width <=750px) { 
+	nav{
+		flex-direction: column;
+	}
+}
+
+@media screen  and ( width <=750px){
+	.bottomheader{
+		height: fit-content;
+	}
+}
+
+@media screen  and ( width <=600px){
+	main{
+		flex-direction: column;
+	}
+}
+
+@media screen  and ( width <=320px){
+	.mainleft{
+		background-color: #cce7e7;
+		width: 100%;
+		padding: 0;
+	}
+
+	main{
+		background-color: #3dcdcd;
+		padding: 6px;
+	}
+	
+	.mainright{
+		padding: 0;
+	}
+}
